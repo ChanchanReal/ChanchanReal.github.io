@@ -1,0 +1,43 @@
+.review-tag{
+    font-family: "Shadows Into Light", sans-serif;
+}
+
+.review-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.review-desc{
+    width: 300px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 25px 15px;
+}
+
+.reviewer,
+.reviewer-title{
+    margin: 0px;
+}
+
+@media (max-width: 768px){
+    .review-wrapper{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .review-desc{
+        margin-top: 30px;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    .reviewer-title{
+        color: lightblue;
+    }
+}
+@media (prefers-color-scheme: light){
+    .reviewer-title{
+        color: gray;
+    }
+}
